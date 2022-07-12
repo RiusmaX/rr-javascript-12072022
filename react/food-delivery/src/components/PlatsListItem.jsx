@@ -10,7 +10,7 @@ function PlatsListItem ({ plat }) {
       <div className='cardFooter'>
         <h2>{plat.nom}</h2>
         <p>{plat.description}</p>
-        <p>{plat.price.toFixed(2)} €</p>
+        <p><strong>{plat.price.toFixed(2)} €</strong></p>
       </div>
     </div>
   )

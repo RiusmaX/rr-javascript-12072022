@@ -9,6 +9,7 @@
   height: 100%;
   margin: 20px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transition: transform 200ms ease-in-out;
 }
 
 .card:hover {

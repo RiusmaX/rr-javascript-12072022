@@ -1,0 +1,35 @@
+.colorButtons {
+  display: block;
+  margin: 20px 0;
+}
+
+canvas {
+  cursor: crosshair;
+}
+
+canvas#canvas {
+  left: 150px;
+  top: 45px;
+}
+
+div#sidebar {
+  position: absolute;
+  left: 0;
+  width: 150px;
+  padding: 20px 20px;
+  top: 0;
+}
+
+.btn, input, .input-group {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.toolsButtons .btn {
+  width: 48%;
+}
+
+.colorPicker {
+  background: transparent;
+  height: 40px;
+}

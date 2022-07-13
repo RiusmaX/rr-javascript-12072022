@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { checkAuth } from '../helpers/tokenHelpers'
 
 const styles = {
   header: {
@@ -24,6 +25,14 @@ const styles = {
 }
 
 function Header () {
+  const auth = JSON.parse(window.localStorage.getItem('AUTH'))
+  let greedings
+  if (checkAuth()) {
+    greedings = <h4>Bonjour {auth.user.email}</h4>
+  } else {
+    greedings = <h4>Vous n'est pas connecté</h4>
+  }
+
   return (
     <header style={styles.header}>
       <img src='/img/logo.png' style={styles.logo} />
@@ -38,6 +47,7 @@ function Header () {
           A propos
         </Link>
       </nav>
+      {greedings}
     </header>
   )
 }
